@@ -29,6 +29,7 @@ import { MenuComponent } from './view/menu/menu.component';
 import { PageNotFoundComponent } from './view/page-not-found/page-not-found.component';
 import {DialogModule} from "primeng/dialog";
 import {ButtonModule} from 'primeng/button';
+import {TableModule} from "primeng/table";
 
 @NgModule({
   declarations: [
@@ -57,14 +58,15 @@ import {ButtonModule} from 'primeng/button';
     PageNotFoundComponent,
 
   ],
-  imports: [
-    BrowserModule,
-    FormsModule,
-    AppRoutingModule,
-    HttpClientModule,
-    DialogModule,
-    ButtonModule,
-  ],
+    imports: [
+        BrowserModule,
+        FormsModule,
+        AppRoutingModule,
+        HttpClientModule,
+        DialogModule,
+        ButtonModule,
+        TableModule,
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })
